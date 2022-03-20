@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classroom: Login</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div>
+        <h2 style="text-align: center; background-color: black; color: white; padding: 3px;">Digital Classroom Management</h2>
+    </div>
+    <div id="box">
+        <div id="container1">
+            <img src="./Login.gif" alt="Check your internet connection!" height="400px">
+        </div>
+        <div id="container2">
+            <form action="Login" method="post">
+                <label for="email">Email</label>
+                <br>
+                <input type="email" name="email" placeholder="Enter email" required autofocus>
+                <br><br>
+                <label for="password">Password</label>
+                <br>
+                <input type="password" name="password" placeholder="Enter password" required minlength="8">
+                <br><br>
+                <label for="role">Role</label>
+                <br>
+                <select name="role" id="" required>
+                    <option value="" selected hidden disabled>Select</option>
+                    <option value="teacher">Teacher</option>
+                    <option value="student">Student</option>
+                </select>
+                <br><br><br>
+                <input type="submit" value="Login" style="border: none; background-color: #1c92d2; color: white; cursor: pointer;">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
